@@ -2,7 +2,7 @@
 
 @section('seccion')
 
-      
+       
     <div class="container">
             <table class="table">
                 <thead>
