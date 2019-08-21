@@ -18,6 +18,7 @@
                                     <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre completo</label>
                                     <div class="col-md-6">
                                         <input type="text" id="nombre" class="form-control" name="nombre">
+                                        {!! $errors->first('nombre', '<p class="help-block">:message</p>') !!}
                                     </div>
                                 </div>
 
@@ -25,6 +26,7 @@
                                     <label for="cedula" class="col-md-4 col-form-label text-md-right">Cédula</label>
                                     <div class="col-md-6">
                                         <input type="text" id="cedula" class="form-control" name="cedula">
+                                        {!! $errors->first('cedula', '<p class="help-block">:message</p>') !!}
                                     </div>
                                 </div>
 
@@ -32,6 +34,7 @@
                                     <label for="placa" class="col-md-4 col-form-label text-md-right">Placa</label>
                                     <div class="col-md-6">
                                         <input type="text" id="placa" class="form-control" name="placa">
+                                        {!! $errors->first('placa', '<p class="help-block">:message</p>') !!}
                                     </div>
                                 </div>
 

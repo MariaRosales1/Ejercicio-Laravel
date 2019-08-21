@@ -24,9 +24,15 @@ class VehiculoController extends Controller
     public function store(Request $request){
 
         Validator::make($request->all(), [
-            'marca' => 'required|in:mazda,chevrolet,toyota'
+            'marca' => 'required|in:mazda,chevrolet,toyota',
+            'nombre' => 'required',
+            'cedula' => 'required',
+            'placa' => 'required'
         ], [
-            'marca.in' => 'la marca solo puede ser una de estas opciones: mazda, chevrolet o toyota'
+            'marca.in' => 'la marca solo puede ser una de estas opciones: mazda, chevrolet o toyota',
+            'nombre.required' => 'El campo nombre es requerido',
+            'cedula.required' => 'El campo cédula es requerido',
+            'placa.required' => 'El campo placa es requerido'
         ])->validate();
 
         // $datos = $request->validated();
